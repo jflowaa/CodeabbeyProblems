@@ -1,5 +1,7 @@
-def readWords(file):
+def read_words(file):
     return file.readline()
+
+
 file = open('data.txt', 'r')
-words = readWords(file)
-print (words[::-1])
+words = read_words(file)
+print(words[::-1])

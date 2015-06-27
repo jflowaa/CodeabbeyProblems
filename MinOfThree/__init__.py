@@ -1,11 +1,15 @@
-def getTuple(file):
+def get_pairofthree(file):
     line = file.readline()
-    tuple = line.split()
-    return tuple
-def getMin(tuple):
-    return min(int(tuple[0]), int(tuple[1]), int(tuple[2]))
+    pairofthree = line.split()
+    return pairofthree
+
+
+def get_min(pairofthree):
+    return min(int(pairofthree[0]), int(pairofthree[1]), int(pairofthree[2]))
+
+
 file = open('minListOfThree.txt', 'r')
 iter = int(file.readline())
 while iter > 0:
-    print (getMin(getTuple(file)))
+    print(get_min(get_pairofthree(file)))
     iter -= 1
